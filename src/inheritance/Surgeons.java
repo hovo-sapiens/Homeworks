@@ -1,10 +1,11 @@
 package inheritance;
 
-public class Doctors extends Employers {
-    public Doctors(){}
+public class Surgeons extends Doctors {
 
-    public Doctors(String name, int age, String profession, int salary){
-        minAge=25;
+    public Surgeons(){}
+
+    public Surgeons(String name, int age, String profession, int salary){
+        minAge=27;
         super.name = name;
         super.profession = profession;
         if(age < minAge || age > maxAge){
