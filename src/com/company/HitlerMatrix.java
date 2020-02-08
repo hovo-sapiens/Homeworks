@@ -13,7 +13,11 @@ public class HitlerMatrix {
             }
             System.out.println();
         }
+        //***********************
         System.out.println();
+        System.out.println("***************");
+        System.out.println();
+        //***********************
         char [][] sv=new char[10][10];
         for(int i=0;i<sv.length;i++){
             for(int j=0;j<sv[i].length;j++){
@@ -25,7 +29,11 @@ public class HitlerMatrix {
             }
             System.out.println();
         }
+        //***********************
         System.out.println();
+        System.out.println("***************");
+        System.out.println();
+        //***********************
         char[][] s=new char[9][9];
         for(int x=0;x<s.length;x++){
             for(int y=0;y<s[x].length;y++){
