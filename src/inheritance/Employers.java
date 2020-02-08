@@ -1,26 +1,34 @@
 package inheritance;
 
 public class Employers {
-    private String name;
-    private int age;
-    private String profession;
-    private final int minSalary=68000;
-    private final int maxAge=63;
-    int minAge=22;
-    private int salary;
+    protected String name;
+    protected int age;
+    protected String profession;
+    protected final int minSalary = 68000;
+    protected final int maxAge = 63;
+    protected int minAge = 22;
+    protected int salary;
 
     public Employers(){}
 
-    public Employers(String name,int age,String profession,int salary){
-        this.name=name;this.profession=profession;
-        if(age<minAge||age>maxAge){
-            System.out.println("Age of "+name+" is inappropriate");
-        }else{this.age=age;}
-        if(salary<minSalary){
-            System.out.println("You can't hire "+name +" with salary lower than minimal salary");
-        }else{this.salary=salary;}
+    public Employers(String name, int age, String profession, int salary){
+        this.name = name;
+        this.profession = profession;
+        if(age < minAge || age > maxAge){
+            System.out.println("Age of " + name + " is inappropriate");
+        }else{
+            this.age = age;
+        }
+        if(salary < minSalary){
+            System.out.println("You can't hire " + name + " with salary lower than minimal salary");
+        }else{
+            this.salary = salary;
+        }
     }
 
+    public int getMinAge() {
+        return minAge;
+    }
 
     public int getAge() {
         System.out.println("This person's age is "+age);
@@ -53,5 +61,6 @@ public class Employers {
 
     public String toString(){
         return "Name :"+name+", age :"+age+", profession :"+profession+", salary :"+salary+"֏";
+
     }
 }
